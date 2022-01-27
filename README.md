@@ -9,11 +9,10 @@ Create your id and make your note. Several people can create their account(offli
 
 # What more is coming ?
 
-* feature for modifying notes
 * feature for deleting notes
 * feature for creating multiple notes
 
 # CAUGHT BUGS !!!
 
-* Ambiguity happens when same accounts created with same name and PIN.
-* Sometimes got glitched when username or PIN didn't created accordingly.
+* (FIXED) Ambiguity happens when same accounts created with same name and PIN.
+* (FIXED) Sometimes got glitched when username or PIN didn't created accordingly.
