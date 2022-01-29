@@ -1,6 +1,3 @@
-from pickletools import read_long1
-from cv2 import line
-from pip import main
 from termcolor import cprint
 from pyfiglet import *
 from time import sleep
@@ -57,7 +54,7 @@ def addnotes():
             f.write(str(n_details))
             f.write("\n")
             f.close()
-            cprint('\nNote successfully created.','green')
+            cprint('\nNote successfully created.', 'green')
             break
 
 
@@ -83,11 +80,11 @@ def viewnotes():
                 if readp == password:
                     readed = read[i][40:138]
                     clear()
-
                     cprint('\nYOUR SECRET NOTE IS : ', 'blue')
+
                     cprint(readed, 'green')
-                    
-                    
+
+                    # cprint('1 - Delete Note','red')
 
                 else:
                     pass
@@ -100,24 +97,10 @@ def modify():  # UNDER CONSTRUCTION --------------------------------------------
     name = input("Enter Username : ")
     password = str(input("Enter PIN : "))
     e_details.append("NAME : "+name+", PASS : "+password)
-    
-    cprint('\n1 - Add Something\n0 - Exit')
-    usc = int(input())
-    if usc == 1:
-        with open("C:\\Users\Public\data.secret", "a") as mod:
-            cprint('Write here : ', 'green')
-            added_more = input()
-            joinit = remove(readed)+added_more
-            e_details.append('NAME : '+name+', PASS : ' +
-                                             password+', SECRET : '+joinit)
-            mod.writelines(str(e_details))
-            mod.write("\n")
-            mod.close()
-            
-    elif usc == 0:
-        navigate_app()
-    
 
+    pass
+
+    
 
 
 if __name__ == "__main__":
